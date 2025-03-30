@@ -5,6 +5,7 @@
 #include<StringDict.h>
 
 struct OrderTree{
+	OrderTree* parent;
 	Element root;
 	std::vector<OrderTree> childs;
 };
@@ -13,7 +14,7 @@ class Parser{
 	private:
 		
 	public:
-		static OrderTree* Parse();
+		static OrderTree Parse(std::vector<Element> elements);
 };
 
 #endif
