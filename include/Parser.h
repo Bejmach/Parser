@@ -7,6 +7,7 @@
 struct OrderTree{
 	OrderTree(Element _root = {"", ""}, OrderTree* _parent = nullptr);
 	~OrderTree();
+	void Print(int spaces = 0);
 
 	OrderTree* parent;
 	Element root;
